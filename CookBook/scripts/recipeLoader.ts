@@ -40,12 +40,12 @@ class RecipeLoader {
                 //HINT: Use the push() function
                 
                     var recipeCategorySummary = new RecipeCategorySummary({
-                        
+                         
                         title: category.details,
                         text: category.title
                      });
                     recipeCategoriesSummary.items.push(recipeCategorySummary);
-                
+                 
             });
             
             //Render the categories into the select

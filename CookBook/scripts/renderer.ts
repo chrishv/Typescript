@@ -8,7 +8,7 @@
             opt.setAttribute('title', category.title);
             opt.innerHTML = category.text;
             recipeSelect.appendChild(opt);
-        });
+        }); 
     }
 
     renderCategory(category: IRecipeCategory) {

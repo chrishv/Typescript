@@ -11,7 +11,7 @@ class BaseRecipeCategory implements IBaseRecipeCategory{
     //Assign the parameter value to the associated member variables.
     constructor(baseRecipeCategory: IBaseRecipeCategory) {
         this.name = baseRecipeCategory.name;
-        this.foodGroups = baseRecipeCategory.foodGroups;
+        this.foodGroups = baseRecipeCategory.foodGroups; 
     }
 
 } 

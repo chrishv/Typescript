@@ -21,7 +21,7 @@ window.onload = () => {
     //Call the loader object's load() function ("loader" is the object 
     //you created in the previous TODO)
     var loader = new RecipeLoader("/JSON/recipeTypes.json");
-
+     
     loader.load();
 
     renderer = new Renderer();

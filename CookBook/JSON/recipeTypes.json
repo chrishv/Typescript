@@ -5,7 +5,7 @@
             "foodGroups": [ { "title": "vegetable" }, { "title": "grain" }, { "title": "meat" } ],
             "details": "These foods are designed to awaken the palate prior to the meal. They should be savory, light, and easy to eat.",
             "examples": [
-
+               
                 {
                     "name": "Potato Skins",
                     "ingredients": [ "Potatoes", "Cheese", "Bacon", "Sour Cream" ],

@@ -9,8 +9,8 @@
 //4. Assign the values from the constructor parameter to the member variables
 class RecipeCategorySummary  implements IRecipeCategorySummary{
     text: string;
-    title: string;
-
+    title: string; 
+      
     constructor(recipeCategorySummary: IRecipeCategorySummary) {
         
         this.text = recipeCategorySummary.text;

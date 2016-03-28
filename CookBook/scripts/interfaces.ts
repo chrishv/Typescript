@@ -11,7 +11,7 @@
 interface IBaseRecipeCategory {
     name: string;
     foodGroups: FoodGroup[];
-}
+} 
 
 //TODO
 //Create an interface for IRecipeCategory that extends IBaseRecipeCategory

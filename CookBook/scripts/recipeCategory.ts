@@ -4,8 +4,8 @@
 
 class RecipeCategory extends BaseRecipeCategory implements IBaseRecipeCategory{
     description: string;
-    examples: Example[];
-
+    examples: Example[]; 
+      
     constructor(recipeCategory: IRecipeCategory) {
         super(recipeCategory);
         this.description = recipeCategory.description;
