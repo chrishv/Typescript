@@ -1,0 +1,6 @@
+C:\Typescript\Module-5-Exercise\CookBook\obj\Debug\CookBook-Module5.csprojResolveAssemblyReference.cache
+C:\Typescript\Module-5-Exercise\CookBook\bin\CookBook-Module5.dll.config
+C:\Typescript\Module-5-Exercise\CookBook\bin\CookBook-Module5.dll
+C:\Typescript\Module-5-Exercise\CookBook\bin\CookBook-Module5.pdb
+C:\Typescript\Module-5-Exercise\CookBook\obj\Debug\CookBook-Module5.dll
+C:\Typescript\Module-5-Exercise\CookBook\obj\Debug\CookBook-Module5.pdb
