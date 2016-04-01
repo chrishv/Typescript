@@ -15,12 +15,12 @@ class RecipeLoader {
             //TODO
             //Change RecipeCategories to use the new generic type.
             //Pass IRecipeCategory as the type
-            recipeCategories = new RecipeCategories<IRecipeCategory>();
+            recipeCategories = new RecipeCategories<Interfaces.IRecipeCategory>();
 
             //TODO
             //Create a new RecipeCategories object named recipeCategoriesSummary
             //and pass an IRecipeCategorySummary as the generic value.
-            var recipeCategoriesSummary = new RecipeCategories<IRecipeCategorySummary>();
+            var recipeCategoriesSummary = new RecipeCategories<Interfaces.IRecipeCategorySummary>();
             
             categories.forEach((category) => {
                 var recipeCategory = new RecipeCategory({
@@ -64,7 +64,7 @@ class RecipeLoader {
         });
     }
 
-    getExamples(category) : IExample[] {
+    getExamples(category) : Interfaces.IExample[] {
         return category.examples.map((example) => { 
             return new Example({
                 name: example.name,

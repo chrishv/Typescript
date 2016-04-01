@@ -7,11 +7,12 @@
 //3. Create a constructor that accepts a single parameter
 //   of type IRecipeCategorySummary
 //4. Assign the values from the constructor parameter to the member variables
-class RecipeCategorySummary  implements IRecipeCategorySummary{
+
+class RecipeCategorySummary  implements RecipeData.Interfaces.IRecipeCategorySummary{
     text: string;
     title: string; 
       
-    constructor(recipeCategorySummary: IRecipeCategorySummary) {
+    constructor(recipeCategorySummary: RecipeData.Interfaces.IRecipeCategorySummary) {
         
         this.text = recipeCategorySummary.text;
         this.title = recipeCategorySummary.title;

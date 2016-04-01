@@ -1,4 +1,4 @@
-﻿class FoodGroup implements IFoodGroup{
+﻿class FoodGroup implements RecipeData.Interfaces.IFoodGroup{
     name: string;
 
     constructor(name: string) {

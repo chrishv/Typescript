@@ -1,7 +1,7 @@
 ﻿class Renderer {
-
+    
     //Example how the RecipeCategories<T> generic is used.
-    renderCategories(recipeCategoriesSummary: RecipeCategories<IRecipeCategorySummary>) {
+    renderCategories(recipeCategoriesSummary: RecipeCategories<RecipeData.Interfaces.IRecipeCategorySummary>) {
         var recipeSelect = document.getElementById('RecipeCategory');
         recipeCategoriesSummary.items.forEach((category) => {
             var opt = document.createElement('option');
@@ -11,7 +11,7 @@
         }); 
     }
 
-    renderCategory(category: IRecipeCategory) {
+    renderCategory(category: RecipeData.Interfaces.IRecipeCategory) {
         //Update foodgroups bullet points
         var foodGroups = (<HTMLSelectElement> document.getElementById('FoodGroups'));
         foodGroups.value = '';
@@ -29,7 +29,7 @@
 
     }
 
-    renderExamples(category: IRecipeCategory) {
+    renderExamples(category: RecipeData.Interfaces.IRecipeCategory) {
         //Update examples
         var examples = (<HTMLSelectElement> document.getElementById('examples'));
         examples.value = '';
