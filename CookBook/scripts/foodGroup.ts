@@ -1,11 +1,12 @@
-﻿class FoodGroup implements RecipeData.Interfaces.IFoodGroup{
-    name: string;
+﻿module Recipe.FoodGroups {
 
-    constructor(name: string) {
-        //FROM MODULES 6-8:
-        //Assign the "name" parameter to the 
-        //"name" member variable
-        this.name = name; 
+    export class FoodGroup implements RecipeData.Interfaces.IFoodGroup {
+        name: string;
+
+        constructor(name: string) {
+            //Capture and hold the food name
+            this.name = name;
+        }
+
     }
-
-} 
+}

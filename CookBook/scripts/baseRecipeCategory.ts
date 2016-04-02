@@ -1,15 +1,8 @@
-﻿//FROM MODULES 6-8: 
-//Copy your BaseRecipeCategory class code
-
-
-class BaseRecipeCategory implements RecipeData.Interfaces.IBaseRecipeCategory{
+﻿class BaseRecipeCategory implements RecipeData.Interfaces.IBaseRecipeCategory{
     name: string;
-    foodGroups: FoodGroup[] = [];
+    foodGroups: Recipe.FoodGroups.FoodGroup[] = [];
 
-    //FROM MODULE 6:
-    //Add constructor using the variable names above
-    //as the parameters (so you'll have two parameters). 
-    //Assign the parameter value to the associated member variables.
+    //Use IBaseRecipeCategory to define the expected parameters for the class constructor and member variables.
     constructor(baseRecipeCategory: RecipeData.Interfaces.IBaseRecipeCategory) {
         this.name = baseRecipeCategory.name;
         this.foodGroups = baseRecipeCategory.foodGroups; 

@@ -1,1 +1,1 @@
-{"version":3,"file":"recipeCategories.js","sourceRoot":"","sources":["recipeCategories.ts"],"names":["RecipeCategories","RecipeCategories.constructor"],"mappings":"AAAA,OAAO;AACP,oEAAoE;AACpE,uBAAuB;AACvB;IAAAA;QACIC,UAAKA,GAAQA,EAAEA,CAACA;IACpBA,CAACA;IAADD,uBAACA;AAADA,CAACA,AAFD,IAEC"}
+{"version":3,"file":"recipeCategories.js","sourceRoot":"","sources":["recipeCategories.ts"],"names":["RecipeCategories","RecipeCategories.constructor"],"mappings":"AAEA,mGAAmG;AACnG;IAAAA;QACIC,UAAKA,GAAQA,EAAEA,CAACA;IACpBA,CAACA;IAADD,uBAACA;AAADA,CAACA,AAFD,IAEC"}

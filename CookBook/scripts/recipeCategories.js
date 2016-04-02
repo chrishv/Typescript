@@ -1,6 +1,4 @@
-//TODO:
-//Modify class to support a single generic parameter that is applied
-//to the items property
+//RecipeCategories class just holds an array of something - as defined by the very general generics
 var RecipeCategories = (function () {
     function RecipeCategories() {
         this.items = [];

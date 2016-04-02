@@ -1,6 +1,5 @@
-﻿//FROM MODULE 7&8:
-//Modify the class below so that it implements the IExample interface
-//and the constructor accepts a parameter typed as IExample.
+﻿
+//Example class holds the details of each menu item
 import Interfaces = RecipeData.Interfaces;
 class Example implements Interfaces.IExample{
     name: string;

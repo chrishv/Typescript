@@ -13,29 +13,23 @@ var RecipeLoader = (function () {
         var _this = this;
         if (data) {
             var categories = data.recipeCategories;
-            //TODO
-            //Change RecipeCategories to use the new generic type.
-            //Pass IRecipeCategory as the type
+            //Pass IRecipeCategory as the type - recipeCategories defined using generics
             recipeCategories = new RecipeCategories();
-            //TODO
-            //Create a new RecipeCategories object named recipeCategoriesSummary
-            //and pass an IRecipeCategorySummary as the generic value.
+            //Defined to pass IRecipeCategorySummary as the generic value.
             var recipeCategoriesSummary = new RecipeCategories();
             categories.forEach(function (category) {
-                var recipeCategory = new RecipeCategory({
+                var recipeCategory = new RecipeDetails.RecipeCategory({
                     name: category.title,
                     foodGroups: _this.getFoodGroups(category),
                     description: category.details,
                     examples: _this.getExamples(category)
                 });
+                //Each RecipeCategory object created with the captured data add it, using the "push" function
+                //to the recipeCategories object which is just an array of objects
                 recipeCategories.items.push(recipeCategory);
-                //TODO
-                //Create a new RecipeCategorySummary instance and pass
-                //the category.title and category.details into the constructor.
-                //Once the class is created add it into the recipeCategoriesSummary
-                //object's items collection
-                //HINT: The constructor object passed must match the IRecipeCategorySummary interface
-                //HINT: Use the push() function
+                //As we are still looping round set-up a recipe summary object and add it to the 
+                //recipecategorysummary object, which is also an array of objects.  Use the push function
+                //Render function builds HTML code
                 var recipeCategorySummary = new RecipeCategorySummary({
                     title: category.details,
                     text: category.title
@@ -52,7 +46,7 @@ var RecipeLoader = (function () {
     RecipeLoader.prototype.getFoodGroups = function (category) {
         //Map foodgroups data to TS object
         return category.foodGroups.map(function (foodGroup) {
-            var group = new FoodGroup(foodGroup.title);
+            var group = new Recipe.FoodGroups.FoodGroup(foodGroup.title);
             return group;
         });
     };

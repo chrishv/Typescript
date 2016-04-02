@@ -10,7 +10,7 @@ module RecipeData.Interfaces {
     //HINT the foodGroups variable should be able to hold more than one value
     export interface IBaseRecipeCategory {
         name: string;
-        foodGroups: FoodGroup[];
+        foodGroups: Recipe.FoodGroups.FoodGroup[];
     } 
 
     //TODO
